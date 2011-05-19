@@ -20,6 +20,11 @@
   <%= @application_version.representedFileURI %>
 </p>
 
+<p>
+  <b>Representedsymbolsfileuri:</b>
+  <%= @application_version.representedSymbolsFileURI %>
+</p>
+
 
 <%= link_to 'Edit', edit_application_version_path(@application_version) %> |
 <%= link_to 'Back', application_versions_path %>

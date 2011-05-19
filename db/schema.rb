@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519053805) do
+ActiveRecord::Schema.define(:version => 20110519055139) do
 
   create_table "application_versions", :force => true do |t|
     t.float    "versionNumber"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110519053805) do
     t.string   "representedFileURI"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "representedSymbolsFileURI"
   end
 
   create_table "applications", :force => true do |t|

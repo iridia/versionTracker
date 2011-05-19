@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Versionnumber:</b>
+  <%= @application_version.versionNumber %>
+</p>
+
+<p>
+  <b>Versionshortstring:</b>
+  <%= @application_version.versionShortString %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @application_version.notes %>
+</p>
+
+<p>
+  <b>Representedfileuri:</b>
+  <%= @application_version.representedFileURI %>
+</p>
+
+
+<%= link_to 'Edit', edit_application_version_path(@application_version) %> |
+<%= link_to 'Back', application_versions_path %>

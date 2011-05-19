@@ -1,4 +1,6 @@
 IridiaVersionTracker::Application.routes.draw do
+  resources :application_versions
+
   resources :applications
 
   get "home/index"

@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519053608) do
+ActiveRecord::Schema.define(:version => 20110519053805) do
+
+  create_table "application_versions", :force => true do |t|
+    t.float    "versionNumber"
+    t.string   "versionShortString"
+    t.string   "notes"
+    t.string   "representedFileURI"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "applications", :force => true do |t|
     t.string   "bundleID"

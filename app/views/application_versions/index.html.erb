@@ -1,0 +1,29 @@
+<h1>Listing application_versions</h1>
+
+<table>
+  <tr>
+    <th>Versionnumber</th>
+    <th>Versionshortstring</th>
+    <th>Notes</th>
+    <th>Representedfileuri</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @application_versions.each do |application_version| %>
+  <tr>
+    <td><%= application_version.versionNumber %></td>
+    <td><%= application_version.versionShortString %></td>
+    <td><%= application_version.notes %></td>
+    <td><%= application_version.representedFileURI %></td>
+    <td><%= link_to 'Show', application_version %></td>
+    <td><%= link_to 'Edit', edit_application_version_path(application_version) %></td>
+    <td><%= link_to 'Destroy', application_version, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Application version', new_application_version_path %>

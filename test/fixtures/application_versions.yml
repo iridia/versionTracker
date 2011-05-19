@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  versionNumber: 
+  versionShortString: MyString
+  notes: MyString
+  representedFileURI: MyString
+
+two:
+  versionNumber: 
+  versionShortString: MyString
+  notes: MyString
+  representedFileURI: MyString

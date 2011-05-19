@@ -1,0 +1,33 @@
+<%= form_for(@application_version) do |f| %>
+  <% if @application_version.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@application_version.errors.count, "error") %> prohibited this application_version from being saved:</h2>
+
+      <ul>
+      <% @application_version.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :versionNumber %><br />
+    <%= f.text_field :versionNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :versionShortString %><br />
+    <%= f.text_field :versionShortString %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :representedFileURI %><br />
+    <%= f.text_field :representedFileURI %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
